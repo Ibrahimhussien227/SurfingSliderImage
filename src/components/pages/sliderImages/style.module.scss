@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+@mixin position($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin font($fontSize, $lineHeight, $font-weight: 500) {
+  font-family: "Lato";
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $font-weight;
+  display: flex;
+  align-items: center;
+  color: #212121;
+}
+.container {
+  position: relative;
+  width: 320px;
+  height: 438px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.shadowContainer {
+  left: 0%;
+  bottom: 0%;
+  @include position(2.28%, 0px);
+  background: rgba(0, 0, 0, 0.0001);
+  box-shadow: 0px 5px 20px rgba(14, 29, 39, 0.05);
+  border-radius: 2px;
+}
+
+.card {
+  left: 0;
+  @include position(0, 175px);
+  bottom: 20px;
+  width: 290px;
+  background: #ffffff;
+  border: 1px solid #dfe6eb;
+  box-shadow: 0px 1px 0px #dfe6eb;
+}
+
+.cover {
+  @include position(0px, 10px);
+  width: 270px;
+  height: 250px;
+  border-radius: 2px;
+}
+
+.title {
+  left: 20px;
+  @include position(245px, 10px);
+  @include font(16px, 22px);
+}
+
+.address {
+  left: 15px;
+  bottom: 21.23%;
+  @include position(330px, 20px);
+  @include font(14px, 20px);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.work {
+  left: 1.96%;
+  @include position(79.22%, 87.25%);
+  @include font(14px, 20px);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.rateText {
+  @include position(3630px, 245px);
+  @include font(14px, 20px, 900);
+}
+
+.rateIcon {
+  @include position(380px, 260px);
+}
+
+.departed {
+  @include position(363px, 20px);
+  @include font(14px, 20px);
+}
+
+.reviews {
+  @include position(363px, 150px);
+  @include font(14px, 20px);
+}
+
+.leftArrow {
+  position: relative;
+  right: 50px;
+  top: 0;
+}
+
+.rightArrow {
+  position: relative;
+  right: -30px;
+  top: 0px;
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+.container {
+  position: relative;
+  width: 1320px;
+  height: 655px;
+  top: 200px;
+  background: #ffffff;
+}
+
+.containerOffer {
+  position: absolute;
+  right: 140px;
+  top: 69px;
+  left: 260px;
+}
+
+.title {
+  position: absolute;
+  right: 330px;
+  top: -100px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
