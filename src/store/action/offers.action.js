@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { ApiUrls } from "../../../constants/urls";
-import offers from "../../api/offers";
+import { ApiUrls } from "../../constants/urls";
+import offers from "../../apis/offers";
 import { setOffers } from "../reducer/offers.reducer";
 
 export const fetchOffersAction = createAsyncThunk(

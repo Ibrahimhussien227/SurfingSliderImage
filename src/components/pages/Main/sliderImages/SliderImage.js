@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Slider from "react-slick";
 import { settings } from "./SliderData";
-import { fetchOffersAction } from "../../store/action/offers.action";
-import ICONS from "../../../constants/icons/icons";
+import ICONS from "../../../../constants/icons/icons";
 import s from "./style.module.scss";
+import { fetchOffersAction } from "../../../../store/action/offers.action";
 
 const SliderImage = () => {
   const dispatch = useDispatch();
