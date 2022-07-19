@@ -4,15 +4,27 @@ import { store } from "../store/store";
 import { Provider } from "react-redux";
 import s from "./style.module.scss";
 
+const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+const textStyle = isMobile ? "text-mobile" : "text-mobile";
+
+const MyWrapperComponent = (props) => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const textStyle = isMobile ? "text-mobile" : "text-mobile";
+
+  return <div className={textStyle}>{props.children}</div>;
+};
+
 function App() {
   return (
     <Provider store={store}>
-      <div className={s.container}>
-        <div className={s.containerOffer}>
-          <div className={s.title}>Интересные предложения</div>
-          <SliderImage />
+      <MyWrapperComponent>
+        <div className={s.container}>
+          <div className={s.containerOffer}>
+            <div className={s.title}>Интересные предложения</div>
+            <SliderImage />
+          </div>
         </div>
-      </div>
+      </MyWrapperComponent>
     </Provider>
   );
 }
