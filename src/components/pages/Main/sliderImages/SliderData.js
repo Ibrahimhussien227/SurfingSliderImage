@@ -24,7 +24,7 @@ const SamplePrevArrow = (props) => {
 export const settings = {
   dots: true,
   infinite: false,
-  speed: 500,
+  speed: 700,
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
@@ -41,15 +41,15 @@ export const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2,
+        initialSlide: 1,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
